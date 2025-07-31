@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV Job Matcher</title>
+</head>
+<body>
+    <h1>Find Jobs That Match Your CV</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+        <label>Preferred Job Location:</label><br>
+        <input type="text" name="location" required><br><br>
+        <label>Upload Your CV (PDF only):</label><br>
+        <input type="file" name="cv" accept=".pdf" required><br><br>
+        <button type="submit">Match Jobs</button>
+    </form>
+
+    <p>Don’t have a CV? Try free CV makers: 
+        <a href="https://www.canva.com/resumes/" target="_blank">Canva</a> or 
+        <a href="https://zety.com/resume-builder" target="_blank">Zety</a>
+    </p>
+
+    {% if jobs %}
+        <h2>Strong Matches for You</h2>
+        <ul>
+        {% for job in jobs %}
+            <li>
+                <strong>{{ job.title }}</strong> - {{ job.company }} ({{ job.location }})<br>
+                <form>
+                    <button type="button" onclick="alert('Application submitted for {{ job.title }} at {{ job.company }}')">Apply</button>
+                </form>
+            </li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
