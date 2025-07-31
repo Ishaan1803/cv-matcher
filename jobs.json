@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Frontend Developer",
+        "company": "TechCorp",
+        "location": "Remote",
+        "keywords": ["JavaScript", "React", "HTML", "CSS"]
+    },
+    {
+        "title": "Data Analyst",
+        "company": "DataWise",
+        "location": "New York",
+        "keywords": ["Python", "Pandas", "SQL", "Excel"]
+    },
+    {
+        "title": "Backend Developer",
+        "company": "WebDev Inc.",
+        "location": "San Francisco",
+        "keywords": ["Python", "Flask", "APIs"]
+    },
+    {
+        "title": "Marketing Executive",
+        "company": "MarketMax",
+        "location": "Mumbai",
+        "keywords": ["Marketing", "Digital", "SEO", "Communication"]
+    }
+]
